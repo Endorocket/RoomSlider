@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
       @Override
       public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-//          System.out.println(new Point((int) event.getX(), (int) event.getY()));
           drawCircle(imageView, false, true, new Point((int) event.getX(), (int) event.getY()));
         } else if (event.getAction() == MotionEvent.ACTION_UP) {
           drawCircle(imageView, true);

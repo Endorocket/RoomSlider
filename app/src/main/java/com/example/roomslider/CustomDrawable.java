@@ -39,7 +39,7 @@ public class CustomDrawable extends Drawable {
   public void draw(Canvas canvas) {
     int width = getBounds().width();
     int height = getBounds().height();
-    float radius = Math.min(width, height) / 5;
+    float radius = Math.min(width, height) / 7;
 
     // draw previous image first
     canvas.drawBitmap(bitmap, 0, 0, null);
@@ -58,7 +58,7 @@ public class CustomDrawable extends Drawable {
   }
 
   private int[] glassIndices = new int[]{40, 50, 65, 75, 100, 120, 301};
-  private int[] glassXCoords = new int[]{500, 400, 400, 320, 300, 200, -1000};
+  private int[] glassXCoords = new int[]{550, 400, 400, 320, 300, 200, -1000};
   private int[] glassYCoords = new int[]{380, 370, 370, 370, 370, 370, -1000};
 
   private int[] bookIndices = new int[]{40, 50, 60, 301};
@@ -86,7 +86,7 @@ public class CustomDrawable extends Drawable {
 
           int offsetY = 200;
           canvas.drawRoundRect(glassX - 100, glassY - 50 - offsetY, glassX + 250, glassY + 50 - offsetY, 10, 10, rectanglePaint);
-          canvas.drawText("Piekny kieliszek", glassX - 50, glassY - offsetY, textPaint);
+          canvas.drawText("Piękny kieliszek", glassX - 50, glassY - offsetY, textPaint);
         }
         break;
       }
