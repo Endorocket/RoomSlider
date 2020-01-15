@@ -57,11 +57,11 @@ public class CustomDrawable extends Drawable {
 //    printPointsInfo(canvas, radius, points);
   }
 
-  private int[] glassIndices = new int[]{40, 50, 65, 75, 100, 120, 301};
+  private int[] glassIndices = new int[]{35, 50, 65, 75, 100, 120, 301};
   private int[] glassXCoords = new int[]{550, 400, 400, 320, 300, 200, -1000};
   private int[] glassYCoords = new int[]{380, 370, 370, 370, 370, 370, -1000};
 
-  private int[] bookIndices = new int[]{40, 50, 60, 301};
+  private int[] bookIndices = new int[]{35, 50, 60, 301};
   private int[] bookXCoords = new int[]{540, 450, 450, -1000};
   private int[] bookYCoords = new int[]{180, 70, 50, -1000};
 
